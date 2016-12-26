@@ -273,7 +273,7 @@ ul li{
     top: 0px;
     margin-right: 2px;
     visibility: hidden;
-    cursor: pointer;
+    /*cursor: pointer;*/
     
 }
 
