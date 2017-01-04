@@ -139,7 +139,7 @@
                 <ul class="experience-list">
                     <li>
                         <h3 contenteditable="true">EMC上海研发中心－ Lab Software Engineer（intership） 201409-201502</h3>
-                        <p contenteditable="true">任职于 EMC 的 Java 工具开发组，负责开发一个 Java 实现的 EMC 内部高层使用的人事管理统计系统。负责与 EMC 各部门讨论获取需求并实现。
+                        <p contenteditable="true">任职于 EMC 的 Java 工具开发组，负责大数据可视化，以及开发一个 Java 实现的 EMC 内部高层使用的人事管理统计系统。负责与 EMC 各部门讨论获取需求并实现。
                         </p>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
@@ -152,7 +152,7 @@
                         <p contenteditable="true">主要负责 Java 代码的开发、接口的定义、确定新需求和接口规范。使用 Mybatis，Spring, freemarker等模板框架和工具。负责了包括系统中定时器及CAS单点登录的开发,实现了低耦合，高内聚。 同时尝试降低 Java 端与 SAP 端的高耦合度，JAVA 端数据库为前端 暂存库，SAP 端为确认业务数据库，提高业务前端功能的效率</p>
                         <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <h3 contenteditable="true">饿了么－高级Java工程师 (技术创新部中间件团队)201604-now</h3>
+                        <h3 contenteditable="true">饿了么－高级Java工程师 (技术创新部中间件团队) 201604-now</h3>
                         <p contenteditable="true">实现一个HTTP反向代理api Gateway,包含了负载均衡,动态路由,以及熔断机制等,从而达到有效的管理，实现http，http2，websocket，tcp proxy等协议转换,是整个饿了么的流量入口。code! code! code!</p>
                         <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                 </ul>
@@ -184,16 +184,27 @@
                         </p>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <h3 contenteditable="true">2016.04- Api Gateway 项目</h3>
+                        <h3 contenteditable="true">2016.04-now 分布式动态路由网关</h3>
                         <p contenteditable="true">
                             项目职责:
-                            实现api gateway filters的Implement。实现了诸如单点登录loginFilter, qps限流，用户画像限流，跨域调用corsFilter, cache擦出，动态路由，session id注入等功能,并实现gateway-registry的管理配置界面,使用到Vue.js, javascript, Velocity等框架,全栈开发。此外还参与了反爬虫模块的开发(篇幅原因不赘述)。</p><br>
+                            实现api gateway filters的Implement。实现了诸如单点登录loginFilter, qps限流，用户画像限流，跨域调用corsFilter, cache擦出，动态路由，session id注入等功能,并实现gateway-registry的管理配置界面,使用到Vue.js, javascript, Velocity等框架,全栈开发。</p><br>
                         <p>    
                             项目描述:
                             利用Java Nio,具体使用netty作为异步通信管道(从创建连接,到维持心跳均为异步操作),高性能，支持高并发，高连接。实现业务相关的filter，route动态路由(仿Nginx)等功能做到热部署。
                         </p>
                         <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
+                         <li>
+                        <h3 contenteditable="true">2016.09-now Gateway 反爬虫</h3>
+                        <p contenteditable="true">
+                            项目职责:
+                            在饿了么入口的gateway filter处收集qps,url等信息，进行基于内存和cpu的逻辑实现。技术栈是Kafka,multithreading,Netty等。参与部分的反爬架构设计
+                            </p><br>
+                        <p>    
+                            项目描述:
+                            未知的对手会频繁访问我们的接口(如支付，短信等)，造成一定损失，需要一个业务不敏感的平台进行防爬。反爬虫规则的apply支持自动和手动两种模式。一个Filter负责把数据吐给collector，一个Filter负责运行反爬虫的具体逻辑。Collector接收从gateway传过来的数据，然后把数据发到Kafka集群；Kafka接收数据，起缓冲数据的作用;Consumer从Kafka拉取数据，然后对数据进行分析汇总，判断出疑似爬虫。最后的分析与apply操作在registry处进行。
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <!-- <li>
                         <h3 contenteditable="true">2016.07- NoSql presto 项目架构</h3>
                         <p contenteditable="true">
                             项目职责:
@@ -202,7 +213,7 @@
                             项目描述:
                             基于 Facebook 的开源项目 presto 进行学习研究,并尝试进行架构实现,接入 elastic search,实现 pushdown 优化查询。将多个数据源的数据进行合并分析,提供一致的 sql 查询。
                         </p>
-                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li> -->
                 </ul>
             </div>
             <!-- <div class="trophy info-unit">
